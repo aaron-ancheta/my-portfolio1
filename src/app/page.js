@@ -3,6 +3,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import { IoLogoGithub } from "react-icons/io";
 import Image from "next/image";
+import profile from "../../public/headshot-3.jpg";
 
 export default function Home() {
   return (
@@ -47,7 +48,18 @@ export default function Home() {
             <AiFillLinkedin />
             <IoLogoGithub />
           </div>
-          <div className=""></div>
+          <div className="relative">
+            <Image src={profile} className="rounded-full w-80 mt-20 mx-auto" />
+          </div>
+        </section>
+
+        {/* new section */}
+        <section>
+          <h3 className="text-3xl py-1">My projects</h3>
+          <p className="text-md py-2 leading-8 text-gray-800">
+            Since the beginning of my Computer Science journey, I have developed
+            projects such as
+          </p>
         </section>
       </main>
     </div>
